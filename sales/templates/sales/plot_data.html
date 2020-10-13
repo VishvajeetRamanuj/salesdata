@@ -1,0 +1,8 @@
+select the 
+
+<form method='post' enctype="multipart/form-data" action="{% url 'sales:plot_and_show' %}">
+{% csrf_token %}
+<input type='file' name='sales_data_file'>
+<input type='submit'>
+
+</form>
