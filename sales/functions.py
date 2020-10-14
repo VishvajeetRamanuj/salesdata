@@ -77,7 +77,7 @@ def create_plot_from_xlsx(filename, sheet_name):
     # plt.show()
 
     # saving figure
-    fig.savefig('sales/static/sales/age_histogram.png', dpi=300)
+    fig.savefig('static/sales/age_histogram.png', dpi=300)
 
 
     fig1=plt.figure()
@@ -90,7 +90,7 @@ def create_plot_from_xlsx(filename, sheet_name):
     # plt.show()
 
     # saving figure
-    fig1.savefig('sales/static/sales/income_distribution.png')
+    fig1.savefig('static/sales/income_distribution.png')
 
     ##############
     #BOXPLOT# AGE WISE 
@@ -103,7 +103,7 @@ def create_plot_from_xlsx(filename, sheet_name):
     ax.boxplot(df['Age'])
     # plt.show()
 
-    fig.savefig('sales/static/sales/age_box_plot.png')
+    fig.savefig('static/sales/age_box_plot.png')
 
 
     ###################
@@ -157,7 +157,7 @@ def create_plot_from_xlsx(filename, sheet_name):
     ax1.set_ylabel('Sum of Sales')
     ax1.set_title("Gender wise Sum of Sales")
     var.plot(kind='bar')
-    fig.savefig('sales/static/sales/gender_bar_plot.png', dpi=300)
+    fig.savefig('static/sales/gender_bar_plot.png', dpi=300)
 
     ######################
     #BARCHART
@@ -172,7 +172,7 @@ def create_plot_from_xlsx(filename, sheet_name):
     ax1.set_ylabel('Sum of Sales')
     ax1.set_title("BMI wise Sum of Sales")
     var.plot(kind='bar')
-    fig.savefig('sales/static/sales/bmi_bar_plot.png', dpi=300)
+    fig.savefig('static/sales/bmi_bar_plot.png', dpi=300)
 
 # calling function for actual process
 # create_plot_from_xlsx("41_Expmoyee_sales_data_gender.xlsx", "Sheet1")
